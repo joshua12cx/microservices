@@ -16,6 +16,11 @@ spring:
       uri: http://localhost.8860
 eureka:
   client:
-    fetch-registry: false
+   # fetch-registry: false
     register-with-eureka: false
-#message: Configuracion de Cajero en el servidor levantado!
+    serviceurl:
+      defaultZone: http://localhost:8850/eureka/
+message: Configuracion de Cajero en el servidor levantado!
+spring:
+  application:
+    name: ms_cajero
