@@ -1,5 +1,10 @@
 server:
   port: ${PORT:8863}
+eureka:
+  client:
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8850/eureka/
 message: Configuracion de cajero en el servidor levantado!
 spring:
   datasource:
@@ -11,13 +16,6 @@ spring:
     hibernate:
       ddl-auto: update
       database-platform: org.hibernate.dialect.MySQLDialect
-eureka:
-  client:
-   # fetch-registry: false
-    register-with-eureka: true
-    serviceurl:
-      defaultZone: http://localhost:8850/eureka/
-message: Configuracion de Cajero en el servidor levantado!
-spring:
-  application:
-    name: ms_cajero
+  cloud:
+    config:
+      uri: http://localhost.8860
