@@ -1,16 +1,12 @@
 server:
-    port: ${PORT:8866}
-#eureka:
-#  client:
-#    register-whit-eureka:    false
-#    serviceurl: defaultZone=http://localhost:8850/eureka/
+  port: ${PORT:8866}
 eureka:
   client:
-    register-with-eureka: true
+    register-with-eureka:    true
     #fetch-registry: false
     serviceurl:
       defaultZone: http://localhost:8761/eureka/
-message: Configuracion de Categoria de producto en el servidor levantado!
+message: Configuracion de categoria en el servidor levantado!
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
