@@ -14,3 +14,8 @@ spring:
   cloud:
     config:
       uri: http://localhost.8860
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+#message: Configuracion de Cajero en el servidor levantado!
