@@ -1,5 +1,5 @@
 server:
-    port: ${PORT:8863}
+    port: ${PORT:8761}
 #eureka:
 #  client:
 #    register-whit-eureka:    false
